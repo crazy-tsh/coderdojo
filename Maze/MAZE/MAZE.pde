@@ -3,7 +3,7 @@
 //This statment creates an object called s and it is of the bob class.
 bob s;
 
-//This statement creates an objec called paul from the paulthewall class.
+//This statement creates an object called paul from the paulthewall class.
 paulthewall paul = new paulthewall(30,350,400,1);
 
  bob lob = new bob(250,250,20);
