@@ -19,5 +19,9 @@ class bob{
   circle(x_pos,y_pos,radius);
   }
   
+  void move(float x, float y){
+    x_pos = x_pos + x ; 
+    y_pos = y_pos + y;
+  }
   
 }

@@ -1,14 +1,22 @@
  //int GameScreen = 0;
  /********* SETUP BLOCK **************/
 bob s;
- bob lob = new bob(250,220,400);
+paulthewall paul = new paulthewall(30,350,400,1);
+
+ bob lob = new bob(250,250,20);
 void setup() {
-   size(1900, 980);
-     s = new bob();
+   size(500,500);
+   smooth();
+     //s = new bob();
+     
  } 
- void draw () { 
-   
-circle(100,100,100);
+ void draw() { 
+ background(255,255,255);
+//     background(0,0,0);
+
+   lob.show();
+//circle(100,100,100);
+paul.show();
  }
  
  
@@ -16,13 +24,13 @@ circle(100,100,100);
  
  void keyPressed() {
   if (keyCode == UP) {
-    s.dir(0, -1);
+    lob.move(0, -1);
   } else if (keyCode == DOWN) {
-    s.dir(0, 1);
+    lob.move(0, 1);
   } else if (keyCode == RIGHT) {
-    s.dir(1, 0);
+    lob.move(1, 0);
   } else if (keyCode == LEFT) {
-    s.dir(-1, 0);
+    lob.move(-1, 0);
   }
   
   
