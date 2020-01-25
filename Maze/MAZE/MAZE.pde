@@ -45,10 +45,18 @@ void setup() {
 //     background(0,0,0);
   
 countdown=0;
-while(countdown < Arrayday.size()){
-Arrayday.get(countdown).show();
+while(countdown < Arrayday.size()){  
+  paulthewall wall = Arrayday.get(countdown); 
+  if (lob.circleRect(lob.x_pos, lob.y_pos, lob.radius/2, wall.x_pos, wall.y_pos, wall.heighty, wall.widthy)){
+    lob.x_pos = 0;
+    lob.y_pos = 0;
+  }
+  wall.show();
+
 countdown = countdown + 1;
 }
+
+
   
   
   
